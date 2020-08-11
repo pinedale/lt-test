@@ -1,68 +1,75 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# SWAPI LEAN-TECH
 
-## Available Scripts
+Swapi LT es una aplicacion web que nos permite listar todos los personajes de StarWars
 
-In the project directory, you can run:
+## Que hay que hacer?
 
-### `yarn start`
+Debe de construir una aplicacion que: 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Consuma el API Swapi y por congiuiente visualizar en una lista el nombre de los personajes.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+* Este servicio esta pagina por ende el sistema debe soportar:
 
-### `yarn test`
+	1. Ir a la pagina siguiente
+	2. Ir a la pagina previa
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> Nota: Tenga en cuenta que una vez usted cambie de pagina el sistema debe de mostrar los datos correspondientes al API
 
-### `yarn build`
+* El sistema debe mostrar la información de la página en la que estoy, sin importar que el navegador sea refrescado
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* El sistema debe mostrar el nombre del usuario que seleccionó en la cabecera del proyecto.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## API
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Swapi es un API publica dedicada a la muestra de personajes de Star Wars, el enpoint que usted debera consumir es:
 
-### `yarn eject`
+`http://swapi.dev/api/people/?page=num-page`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+De igual forma, para hacer lo mas agil posible este code interview en la estrutura de abajo se le muestra la respuesta del servicio.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+	"count": 82,
+	"next": "http://swapi.dev/api/people/?page=3",
+	"previous": "http://swapi.dev/api/people/?page=1",
+	"results": [
+		{
+			"name": "Anakin Skywalker",
+			"height": "188",
+			"mass": "84",
+			"hair_color": "blond",
+			"skin_color": "fair",
+			"eye_color": "blue",
+			"birth_year": "41.9BBY",
+			"gender": "male",
+			"homeworld": "http://swapi.dev/api/planets/1/",
+			"films": [
+				"http://swapi.dev/api/films/4/",
+				"http://swapi.dev/api/films/5/",
+				"http://swapi.dev/api/films/6/"
+			],
+			"species": [],
+			"vehicles": [
+				"http://swapi.dev/api/vehicles/44/",
+				"http://swapi.dev/api/vehicles/46/"
+			],
+			"starships": [
+				"http://swapi.dev/api/starships/39/",
+				"http://swapi.dev/api/starships/59/",
+				"http://swapi.dev/api/starships/65/"
+			],
+			"created": "2014-12-10T16:20:44.310000Z",
+			"edited": "2014-12-20T21:17:50.327000Z",
+			"url": "http://swapi.dev/api/people/11/"
+		},
+	]
+	. . .
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`
 
-## Learn More
+Si tiene alguna duda adicional, puede visitar su sitio oficial [SWAPI API](https://swapi.dev/).
+## Para tener en cuenta
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Un code interview es un espacio de LT donde se evelua las habilidades del desarrollador. Por consiguiente sientase libre de usar las tecnologias que usted considere adecuadas (Context, hooks, redux, etc.. ) para solucionar este proyecto.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

@@ -6,7 +6,7 @@ Swapi LT es una aplicacion web que nos permite listar todos los personajes de St
 
 Debe de construir una aplicacion que: 
 
-* Consuma el API Swapi y por congiuiente visualizar en una lista el nombre de los personajes.
+* Consuma el API Swapi y por consiguiente visualizar en una lista el nombre de los personajes.
 
 * Este servicio esta pagina por ende el sistema debe soportar:
 
